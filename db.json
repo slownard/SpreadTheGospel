@@ -1,0 +1,12 @@
+{
+    "churches": [
+        {
+            "id": "1",
+            "name": "Living Word Church",
+            "address": "2208 Stanley Terrace, Union, NJ 07083",
+            "denomination": "non-denominational",
+            "pastor": "Nicholas Badillo",
+            "image": "https://lh3.googleusercontent.com/p/AF1QipPVm_6ZIDiYFx8JAH2IC-tcVh1YGb7iYYMekaiz=s1360-w1360-h1020"
+        }
+    ]
+}
