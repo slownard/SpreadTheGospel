@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from "react";
 
-function Header() {
+function Navbar() {
 
     return (
         <>
-            <p>WELCOME TO CHURCH FINDER</p>
         </>
 
     )
 }
 
-export default Header;
+export default Navbar;
