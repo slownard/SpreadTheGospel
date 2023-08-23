@@ -7,6 +7,14 @@
             "denomination": "non-denominational",
             "pastor": "Nicholas Badillo",
             "image": "https://lh3.googleusercontent.com/p/AF1QipPVm_6ZIDiYFx8JAH2IC-tcVh1YGb7iYYMekaiz=s1360-w1360-h1020"
+        },
+        {
+            "id": "2",
+            "name": "UPPERROOM",
+            "address": "1350 Manufacturing St #111, Dallas, TX 75207",
+            "denomination": "non-denominational",
+            "pastor": "Michael Miller",
+            "image": "https://lh3.googleusercontent.com/p/AF1QipOALTbzVf6TNxdWQkumQ1SOtT5HD_v2A65MGKf3=s1360-w1360-h1020"
         }
     ]
 }

@@ -12,20 +12,22 @@ import Navbar from "./Navbar";
 function App() {
 
     // set your state
+    const [page, setPage] = useState(("/"))
     const [churches, setChurches] = useState([])
 
     // fetching json
-    // useEffect(() => {
-    //     fetch('http://localhost:3001/churches')
-    //         .then(res => res.json())
-    //         .then((data) => setChurches(data));
-    // }, [])
+    useEffect(() => {
+        fetch('http://localhost:3000/churches')
+            .then(res => res.json())
+            .then((data) => setChurches(data));
+        console.log(churches)
+    }, [])
 
 
     return (
         <div className="App">
             <Header />
-            <Navbar />
+            <Navbar onChangePage={setPage} />
             <Home />
 
             <header className="App-header">
