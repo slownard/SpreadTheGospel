@@ -16,13 +16,24 @@ function App() {
     const [churches, setChurches] = useState([])
 
     // fetching json
-    useEffect(() => {
-        fetch('http://localhost:3000/churches')
-            .then(res => res.json())
-            .then((data) => setChurches(data));
-        console.log(churches)
-    }, [])
+    // useEffect(() => {
+    //     fetch('http://localhost:3001/churches')
+    //         .then(res => res.json())
+    //         .then((data) => setChurches(data));
+    //     console.log(churches)
+    // }, [])
 
+
+    // 
+    useEffect(() => {
+        fetch("http://localhost:3001/churches")
+            .then(res => res.json())
+            .then(data => {
+                setChurches(data)
+                console.log(data)
+            })
+    }, [])
+    // 
 
     return (
         <div className="App">
