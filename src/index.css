@@ -15,3 +15,9 @@ code {
 * {
   background-color: lightblue;
 }
+
+.cards__item {
+  display: flex;
+  padding: 1rem;
+  width: 31%;
+}

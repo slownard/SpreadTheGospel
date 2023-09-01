@@ -1,12 +1,12 @@
 import React from "react";
+import Church from "./Church"
 
-function ChurchContainer() {
+function ChurchContainer({ churches }) {
 
-
-
-    const mapChurches = churches.map(
-        (church) => {
-            return <Church key={church.id} church={church} />
+    const mapChurches = churches.map
+        ((church) => {
+            return <Church key={church.id}
+                church={church} />
         })
 
     return (

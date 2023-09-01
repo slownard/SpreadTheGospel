@@ -8,9 +8,6 @@ import Home from "./Home";
 import Navbar from "./Navbar";
 import ChurchContainer from "./ChurchContainer";
 
-
-
-
 function App() {
 
     // set your state
@@ -27,10 +24,8 @@ function App() {
             })
     }, [])
 
-
     return (
         <div className="App">
-
 
             <Header />
             <Navbar onChangePage={setPage} />
