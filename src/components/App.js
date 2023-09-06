@@ -7,6 +7,7 @@ import Header from "./Header";
 import Home from "./Home";
 import Navbar from "./Navbar";
 import ChurchContainer from "./ChurchContainer";
+import Submitform from "./Submitform";
 
 function App() {
 
@@ -24,6 +25,20 @@ function App() {
             })
     }, [])
 
+    // post request for adding a church 
+    function handleAddChurch() {
+        fetch("http://localhost:3000/churches", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(newChurches),
+        })
+            .then((res) => res.json())
+            .then((data) => setChurches([data, ...churches]));
+    }
+
+
     return (
         <div className="App">
 
@@ -35,11 +50,11 @@ function App() {
 
                 <Route path="/churches" element={<ChurchContainer churches={churches} />} />
 
+                <Route path="/submitchurch" element={<Submitform handleAddChurch={handleAddChurch} />} />
+
             </Routes>
 
-
-
-        </div>
+        </div >
     );
 }
 

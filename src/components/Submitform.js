@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from "react";
 
-function Submitform() {
+function Submitform({ handleAddChurch }) {
+
+
+
+
 
     return (
         <>
