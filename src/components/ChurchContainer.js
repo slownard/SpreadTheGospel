@@ -3,7 +3,18 @@ import Church from "./Church"
 
 function ChurchContainer({ churches }) {
 
-    const mapChurches = churches.map
+    const [search, setSearch] = useState('')
+
+    // const filteredSkatespots = skatespots.filter(skatespot => {
+    //     return skatespot.name.toLowerCase().includes(search.toLowerCase())
+    // })
+
+
+    const filteredChurches = churches.filter(church => {
+        return church.name.toLowerCase().includes(search.toLowerCase())
+    })
+
+    const mapChurches = filteredChurches.map
         ((church) => {
             return <Church key={church.id}
                 church={church} />
@@ -11,6 +22,7 @@ function ChurchContainer({ churches }) {
 
     return (
         <>
+            <Search search={search} setSearch={setSearch} />
             <ul classname="cards" >
                 {mapChurches}
             </ul>

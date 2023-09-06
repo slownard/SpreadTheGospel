@@ -5,7 +5,9 @@ function Header() {
 
     return (
         <>
-            <p>WELCOME TO CHURCH FINDER</p>
+
+            <p>Christ's Bride</p>
+
         </>
 
     )
